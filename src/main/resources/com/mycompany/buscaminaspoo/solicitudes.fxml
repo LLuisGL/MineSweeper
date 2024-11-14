@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="276.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.buscaminaspoo.Solicitudes">
+   <children>
+      <Label styleClass="labels" text="Solicitudes de Amistad" translateY="20.0" />
+      <TableView fx:id="solicitudes" minHeight="-Infinity" minWidth="-Infinity" prefHeight="164.0" prefWidth="276.0" translateY="50.0">
+        <columns>
+          <TableColumn fx:id="ccodigo" prefWidth="75.0" text="IdUsuario" />
+          <TableColumn fx:id="nombreUsuarioA" prefWidth="199.9999771118164" text="Nombre" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" prefHeight="74.0" prefWidth="276.0" translateY="50.0">
+         <children>
+            <Button fx:id="btnaceptar" mnemonicParsing="false" onAction="#aceptarSolicitud" styleClass="buttons" text="Aceptar" />
+            <Button mnemonicParsing="false" onAction="#rechazarSolicitud" styleClass="buttons" text="Rechazar">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

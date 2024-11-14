@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.buscaminaspoo.creativo">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@style.css">
+         <children>
+            <VBox fx:id="Vjuego" alignment="CENTER_RIGHT" prefHeight="500.0" prefWidth="540.0" styleClass="background" />
+            <VBox alignment="CENTER" prefHeight="500.0" prefWidth="263.0">
+               <children>
+                  <Label styleClass="labels" text="DIMENSIONES">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></Label>
+                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="262.0">
+                     <children>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" onMouseClicked="#setearMapa4x4" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@comunidad/facil.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" onMouseClicked="#setearMapa6x6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@comunidad/medio.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" onMouseClicked="#setearMapa10x10" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@comunidad/dificil.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label styleClass="labels" text="COLOCAR MINAS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="262.0">
+                     <children>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" onMouseClicked="#colocarMina" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@iconos/mine.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" onMouseClicked="#limpiarcelda" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@iconos/borrar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="71.0" prefWidth="262.0" translateY="40.0">
+                     <children>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" onMouseClicked="#create" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@iconos/crear.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" onMouseClicked="#volver" onMouseDragReleased="#volver" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@iconos/volver.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="background-columna-info" />
+                  <String fx:value="buttons" />
+               </styleClass>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

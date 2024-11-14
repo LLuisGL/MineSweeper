@@ -1,0 +1,39 @@
+/* FUENTE PRINCIPAL */
+@font-face {
+    font-family: Minecraft;
+    src: url('./Minecraft.ttf');
+}
+.background{
+    -fx-background-color: #251645
+}
+.labels{
+    -fx-font: 20px 'Minecraft';
+    -fx-text-fill: #fffbef;
+}
+.buttons{
+    -fx-font: 20px 'Minecraft';
+    -fx-text-fill: #323232;
+    -fx-background-radius: 0 ;
+    -fx-background-color: #ffffff;
+}
+.background-columna-info{
+    -fx-background-color: #666387
+}
+.title{
+    -fx-font: 40px 'Minecraft';
+    -fx-text-fill: #fffbef;
+}
+.cuenta{
+    -fx-font: 15px 'Minecraft';
+    -fx-text-fill: #fffbef;
+}
+.amigos{
+    -fx-font: 15px 'Minecraft';
+    -fx-text-fill: #fffbef;
+}
+.buttonAmigos{
+    -fx-font: 15px 'Minecraft';
+    -fx-text-fill: #323232;
+    -fx-background-radius: 0 ;
+    -fx-background-color: #ffffff;
+}
